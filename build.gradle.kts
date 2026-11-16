@@ -15,7 +15,7 @@ val springdocOpenapiVersion = "3.2.0"
 val hmppsKotlinSpringBootStarterVersion = "3.1.0"
 val kotlinLoggingVersion = "3.0.5"
 val commonsTextVersion = "1.15.0"
-val athenaVersion = "2.59.0"
+val athenaVersion = "2.59.1"
 val shedlockVersion = "7.11.0"
 
 dependencies {
@@ -25,7 +25,7 @@ dependencies {
   implementation("org.springframework.boot:spring-boot-starter-data-jpa")
   implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:$springdocOpenapiVersion")
   constraints {
-    implementation("org.webjars:swagger-ui:5.34.1") {
+    implementation("org.webjars:swagger-ui:5.35.0") {
       because("5.34.0 bundles DOMPurify 3.4.16 (CVE-2026-116802/116803/116804). Remove once springdoc ships swagger-ui >= 5.34.1.")
     }
   }
